@@ -1,4 +1,5 @@
 // import main scss file
-import './scss/main.css'
+import './src/scss/main.scss'
+import 'bootstrap/scss/bootstrap.scss'
 
 
