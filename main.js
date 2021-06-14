@@ -12,6 +12,7 @@ import 'bootstrap/scss/bootstrap.scss'
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    
   });
 
 

@@ -193,7 +193,7 @@ $header-p :#21272F;
     background-position: center !important;
     &--content {
         &--left {
-            padding-top: 110px;
+           
             padding-bottom: 110px;
             h4 {
                 font-size: 20px;
@@ -235,6 +235,7 @@ $header-p :#21272F;
         }
 
         .srolll-drwn {
+            margin-left: 10px;
             a {
                 color: #88949B;
                 font-weight: 400;
@@ -265,7 +266,7 @@ $header-p :#21272F;
 }
 
 .header-curve svg {
-    margin-top: -340px;
+    margin-top: -270px;
     
     z-index: 999999;
    
@@ -341,7 +342,7 @@ $header-p :#21272F;
             margin-bottom: 30px;
         }
         .btnn{
-            padding:18px 25px;
+            padding:18px 35px;
             color:#fff;
             font-size: 16px;
             text-transform: uppercase;
@@ -350,8 +351,52 @@ $header-p :#21272F;
             margin-right: 20px;
             border:1px solid $primay-color;
         }
+        .gmail{
+            text-transform: lowercase;
+        }
 
     }
+}
+.about-elementss{
+    position: relative;
+}
+.about-element{
+    position: absolute;
+    content: '';
+    top:10%;
+    right:0%;
+}
+.about-element img{
+    
+    max-width: 50%;
+}
+.about-element-left{
+    position: absolute;
+    content: '';
+    top:10%;
+    left:10%;
+}
+.about-element-left img{
+    max-width: 50%;
+}
+.about-element-left-botton{
+    position: absolute;
+    content: '';
+    bottom:10%;
+    left:0%;
+}
+.about-element-left-botton img{
+    max-width: 50%;
+}
+.about-left-item-one{
+    height: 120px;
+    width:170px;
+    // background-color: red;
+    line-height: 70px;
+    text-align: center;
+    background-color: red;
+    // display: inline-block;
+    
 }
 
 /* services start-------------- */
@@ -444,8 +489,8 @@ $header-p :#21272F;
     z-index: 1;
 }
 .testimonial{
-    background-size: cover!important;
-    background-position: center;
+    background-color: #F0FCF9;
+    padding: 60px 0 90px 0;
 }
 
 .testimonial-slider-content{
@@ -478,10 +523,12 @@ $header-p :#21272F;
     }
 }
 .partner{
+    margin-top: -55px;
     &-all-item{
         text-align: center;
         border:1.5px solid rgba(42, 218, 132, 0.2);
         padding:40px 0 ;
+        background-color: #fff;
     }
     &-border{
         border-right:1px solid #f1f1f1;
@@ -680,4 +727,41 @@ $header-p :#21272F;
 
 .swiper-button-next, .swiper-button-prev {
     position: inherit;
+}
+.swiper-button-next:after{
+    content: 'next';
+
+}
+
+
+.swiper-button-next {
+    background-image: url(https://image.shutterstock.com/image-vector/left-arrow-vector-icon-260nw-576086476.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+  }
+  
+  .swiper-button-next::after {
+    display: none;
+  }
+  .swiper-button-prev {
+    background-image: url(https://cdn0.iconfinder.com/data/icons/feather/96/591276-arrow-right-512.png);
+    
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+  }
+  
+  .swiper-button-prev::after {
+    display: none;
+  }
+
+  
+  .swiper-container-horizontal>.swiper-pagination-progressbar, .swiper-container-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    width: 4px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    left:530px;
 }
