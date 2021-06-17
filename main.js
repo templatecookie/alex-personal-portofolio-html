@@ -73,7 +73,12 @@ import 'bootstrap/scss/bootstrap.scss'
 
 
 
-
+function darkFunction() {
+ 
+    var apply = document.getElementById("dark");
+    // apply.classList.add("dark-theme");
+    alert("hy");
+ }
 
 
 

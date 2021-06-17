@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <div class="dark-theme">
+  <div class="dark" id="dark">
     <!-- header section Start-->
     <section>
       <header class="header">
@@ -105,8 +105,24 @@
           </div>
         </nav>
       </header>
+
+      <div class="mobile-menu">
+        <img src="src/images/logo.svg" alt="">
+        <div class="mobile-menu-bar">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="#333" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>    
+        </div>
+        <ul>
+          <li> <a href="#">Home</a></li>
+          <li> <a href="#">About</a></li>
+          <li> <a href="#">Project</a></li>
+          <li> <a href="#">Blog</a></li>
+          <li> <a href="#">Contact</a></li>
+        </ul>
+      </div>
       <!-- banner section start-->
-      <section class="banner" style="background-image: url(src/images/banner-section.png)">
+      <section class="banner" >
         <div class="container">
           <div class="row">
             <div class="col-lg-6 order-2 order-lg-0 banner--content align-self-center">
@@ -862,8 +878,8 @@
             <div class="secondary-footer-right">
 
               <select name="mode" id="mode">
-                <option value="light">Light</option>
-                <option value="dark">Dark</option>
+                <option  value="light">Light</option>
+                <option value="dark"><button onclick="darkFunction()">Dark</button></option>
               </select>
 
             </div>

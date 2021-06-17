@@ -11,6 +11,7 @@
     "vite": "^2.2.3"
   },
   "dependencies": {
-    "bootstrap": "^5.0.0-beta3"
+    "bootstrap": "^5.0.0-beta3",
+    "isotope-layout": "^3.0.6"
   }
 }
