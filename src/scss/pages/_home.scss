@@ -81,13 +81,9 @@ $header-p :#21272F;
 ::placeholder{
     color: #ffffffbc!important;
     
-    
 }
 
-
-
 /*Genaral Css End*/
-
 
 .btnn-primary {
     background-color: $primary-color;
@@ -111,6 +107,25 @@ $header-p :#21272F;
     border-radius: 5px;
     color:#21272F!important;
     font-weight: 700!important;
+}
+
+.banner--content--left .btnn {
+    transition: .5s;
+}
+
+.about--right .btnn:hover{
+    background:#20ac67!important;
+}
+
+.banner--content--left .btnn:hover{
+    background:#20ac67;
+}
+.contact-btn{
+    transition: .5s;
+}
+.contact-btn:hover{
+    background:#20ac67!important;
+    color:#fff!important;
 }
 
 /* menu start start -----------------------*/
@@ -523,8 +538,7 @@ $header-p :#21272F;
         &-item:hover p,
         &-item:hover path{
             color:#fff;
-            fill:#fff;
-        
+            fill:#fff; 
         }
         &-item:hover span,
         &-item:hover p{
@@ -533,6 +547,14 @@ $header-p :#21272F;
         
 
     }
+}
+.services--body-item svg {
+    display: block;
+    padding-bottom: 27px;
+    fill: #333;
+    transition: 0.5s;
+    height: 100px;
+    width: auto!important;
 }
 .services{
     position: relative;
@@ -637,6 +659,11 @@ $header-p :#21272F;
         }
         img{
             max-width: 120px;
+            filter:grayscale(1);
+            transition: .5s;
+        }
+        img:hover{
+            filter:none;
         }
 
     }
@@ -646,6 +673,7 @@ $header-p :#21272F;
     justify-content: center;
     border:1px solid $primary-color;
 }
+
 
 .blog{
     &-header{
@@ -686,6 +714,9 @@ $header-p :#21272F;
             }
         }
     }
+}
+.card:hover a{
+    color:#20ac67;
 }
 .blog{
     position: relative;
@@ -791,8 +822,10 @@ $header-p :#21272F;
         }
     }
     .footer-curve {
+        
         svg{
-            margin-bottom: -100px;
+            
+            margin-top: -90px!important;
         }
         
     }
@@ -828,19 +861,21 @@ $header-p :#21272F;
         color:#fff;
         font-size: 14px;
         font-weight: 400;
-        font-family: 'Inter';
-        span{
-            padding-right: 10px;
-            
-        }
-        svg{
-            margin-bottom: 5px;
-            cursor: pointer;
-        }
-        
+        font-family: 'Inter';      
     }
 }
 
+select#mode {
+    background: none;
+    border:0;
+    color:#fff;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Inter';
+}
+option{
+    background: $primary-color;
+}
 
 
 
@@ -1037,13 +1072,25 @@ li {
 
 .testimonial{
     &-arrows{
+        display: flex;
         path{
             transition: .5s;
         }
         i{ 
-            transition: .5s;
+            transition: 0.5s;
             border-radius: 6px;
             display: inline-block;
+            width: 66px;
+            height: 66px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            margin-right: 10px;
+            margin-top: 40px;
+
+        }
           
             svg{
                 cursor: pointer;
@@ -1059,7 +1106,7 @@ li {
     }
       
     }
-}
+
 
 
 .card{
@@ -1167,12 +1214,10 @@ input::-webkit-input-placeholder {
     font-family: 'Inter';
 }
 
-.card{
-    transition: .5s;
-}
-.card:hover {
-    padding: 10px;
-}
+
+
+
+
 
 
 @media(max-width:575px) {
@@ -1317,6 +1362,7 @@ input::-webkit-input-placeholder {
     .partner-border img {
         max-width: 120px;
         padding: 10px 0;
+       
     }
     .blog-element-top {
         top: 4%;
@@ -1332,6 +1378,7 @@ input::-webkit-input-placeholder {
     }
     .footer-curve {
         margin-bottom: -5px;
+        
     }
     .contact {
         padding-top: 20px;
@@ -1352,9 +1399,7 @@ input::-webkit-input-placeholder {
     .secondary-footer-social-icon{
         text-align: center;
     }
-    .secondary-footer-right{
-        display: none;
-    }
+    
     .secondary-footer {
         padding-bottom: 20px;
     }
@@ -1366,6 +1411,10 @@ input::-webkit-input-placeholder {
     }
     .contact-pad-l {
          padding-left: 12px!important;
+    }
+    .secondary-footer-right {
+        text-align: center;
+        margin-top: 10px;
     }
 }
 @media(min-width:576px) and (max-width:767px) {
@@ -1484,14 +1533,12 @@ input::-webkit-input-placeholder {
         font-size: 14px;
     }
     .contact-right{
-        margin-top: 20px;
+        margin-top: 40px;
     }
     .secondary-footer-social-icon{
         text-align: center;
     }
-    .secondary-footer-right{
-        display: none;
-    }
+    
     .secondary-footer {
         padding-bottom: 20px;
     }
@@ -1503,8 +1550,29 @@ input::-webkit-input-placeholder {
         padding: 10px 0;
         margin: 10px 0;
     }
+    .contact-left h4{
+        text-align: center;
+    }
+    fieldset {
+        text-align: center;
+    }
+    .contact-pad-r {
+        padding-right: 0px !important;
+    }
+    .secondary-footer-right {
+        text-align: center;
+        margin-top: 10px;
+    }
     
 }
+
+
+
+
+
+
+
+
 @media(min-width:768px) and (max-width:991px) {
     .banner--content--right img {
         max-width: 100%;
@@ -1561,9 +1629,7 @@ input::-webkit-input-placeholder {
     .secondary-footer-social-icon{
         text-align: center;
     }
-    .secondary-footer-right{
-        display: none;
-    }
+    
     .secondary-footer {
         padding-bottom: 20px;
     }
@@ -1577,6 +1643,11 @@ input::-webkit-input-placeholder {
     .partner-border img {
         padding:15px 0 ;
     }
+    .secondary-footer-right {
+        text-align: center;
+        margin-top: 10px;
+    }
+
 
 }
 @media(min-width:992px) and (max-width:1199px) {
@@ -1596,4 +1667,14 @@ input::-webkit-input-placeholder {
     .header-social-icon{
         display: flex;
     }
+    .banner--content .srolll-drwn a {
+        display: none;
+    }
+    .header-curve svg {
+        margin-top: -260px;
+    }
+    .contact-right {
+        padding: 50px 38px;
+    }
+
 }
