@@ -893,31 +893,13 @@ option{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 .swiper-button-next, .swiper-button-prev {
     position: inherit;
 }
 .swiper-button-next:after{
     content: 'next';
-
 }
-
-
 .swiper-button-next {
-   
-    
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
@@ -1446,6 +1428,16 @@ input::-webkit-input-placeholder {
     .partner-border {
         border: 0;
     }
+    .mobile-bars-position{
+        display: block;
+    }
+    div#navbarSupportedContent {
+        display: none!important;
+    }
+    .navbar-toggler {
+        display: none;
+    }
+   
 }
 @media(min-width:576px) and (max-width:767px) {
     .banner--content--right img {
@@ -1605,6 +1597,16 @@ input::-webkit-input-placeholder {
         width: 100%;
         transform: unset;
     }
+    .mobile-bars-position{
+        display: block;
+    }
+    div#navbarSupportedContent {
+        display: none!important;
+    }
+    .navbar-toggler {
+        display: none;
+    }
+    
 }
 
 
@@ -1691,7 +1693,16 @@ input::-webkit-input-placeholder {
         width: 100%;
         transform: unset;
     }
-
+    .mobile-bars-position{
+        display: block;
+    }
+    div#navbarSupportedContent {
+        display: none!important;
+    }
+    .navbar-toggler {
+        display: none;
+    }
+    
 
 }
 @media(min-width:992px) and (max-width:1199px) {
@@ -1720,25 +1731,15 @@ input::-webkit-input-placeholder {
     .contact-right {
         padding: 50px 38px;
     }
-    
-
 }
-
-// @media(max-width: 1024px){
-//     .partner-all-item {
-//         position: unset;
-//         width: 100%;
-//         transform: unset;
-//     }
-// }
-
-aside.mobile-menu-wrapper {
+.mobile-menu-wrapper {
     position: fixed;
     top:0px;
     left:0px;
     height: 100vh;
     width: 100%;
-    z-index: 1;
+    z-index: 99999;
+    display: none;
 }
 
 .background-opacity{
@@ -1753,16 +1754,17 @@ aside.mobile-menu-wrapper {
 
 
 .mobile-menu{
-    background-color: #f1f1f1;
-    padding-left: 30px;
+    background-color: #fff;
+    
     width:350px;
     height: 100%;
     z-index: 99;
     position: relative;
     ul{
-        margin-top: 20px;
-        padding-left: 0;
-        padding-top: 10px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        
 
 
         li{
@@ -1772,8 +1774,7 @@ aside.mobile-menu-wrapper {
                 text-decoration: none;
                 color: #171C23;
                 padding: 5px 0;
-                transition: .5s
-                ;
+                transition: .5s;
             }
             a:hover{
                 color: $primary-color;
@@ -1792,6 +1793,7 @@ aside.mobile-menu-wrapper {
          }
         
     }
-   
+    
 
 }
+
