@@ -3,8 +3,8 @@
 }
 .mobile-bars-position{
     position: absolute;
-    top:20px;
-    right: 60px;
+    top:50px;
+    right: 50px;
     display: none;
     .line-mbl-responsive{
         height:30px;
@@ -48,9 +48,9 @@
     a{
         height: 40px;
         width: 40px;
-        line-height: 40px;
+        line-height: 37px;
         border-radius: 50%;
-        background-color:#29D882;
+        border:1px solid#29D882;
         text-align: center;
 
         margin-right: 8px;
@@ -59,9 +59,23 @@
         }
         svg{
             path{
-                fill: #ffff;
+                fill: #29D882;
             }
         }
+        
+    }
+    a:hover{
+        height: 40px;
+        width: 40px;
+        background-color:#29D882;
+        border:1px solid#29D882;
+            svg{
+                path{
+                    fill: #ffff;
+                }
+            }
+
+        
     }
 }
 .mobile-menu-header{
@@ -70,4 +84,11 @@
     padding-left:30px;
     
     
+}
+.main-menu{
+    position: absolute;
+    top:30px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 180px;
 }

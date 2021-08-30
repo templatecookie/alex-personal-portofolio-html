@@ -134,62 +134,66 @@ $header-p :#21272F;
     width: 100%;
     padding: 0 50px;
     padding-top:8px ;
-
-    &--nav ul {
-        padding-left: 140px;
-
-        li {
-            list-style: none;
-
-            a {
-                font-size: 16px;
-                color: #88949B;
-                margin: 0 20px;
-                padding: 0 6px;
-                font-family: 'Inter';
-                font-weight: 600;
-                position: relative;
+    .nav-all{
+        ul {
+            padding-left: 0px;
+            display: flex;
+    
+            li {
+                list-style: none;
+    
+                a {
+                    font-size: 16px;
+                    color: #88949B;
+                    margin: 0 20px;
+                    padding: 0 6px;
+                    font-family: 'Inter';
+                    font-weight: 600;
+                    position: relative;
+                }
+                .active{
+                    position: relative;
+                    color: #21272F;
+                }
+    
+                .active:after {
+                   
+                    position: absolute;
+                    content: '';
+                    bottom: -5px;
+                    left: 0;
+                    height: 2px;
+                    width: 100%;
+                    background: $primary-color;
+                    
+                }
+    
+    
+                a:after {
+                    position: absolute;
+                    content: '';
+                    bottom: -5px;
+                    left: 0;
+                    height: 2px;
+                    width: 0%;
+                    background: $primary-color;
+                    // opacity: 0;
+                    transition: .5s;
+                }
+    
             }
-            .active{
-                position: relative;
-                color: #21272F;
-            }
-
-            .active:after {
-               
-                position: absolute;
-                content: '';
-                bottom: -5px;
-                left: 0;
-                height: 2px;
+    
+            li:hover a:after {
+                opacity: 1;
                 width: 100%;
-                background: $primary-color;
-                
             }
-
-
-            a:after {
-                position: absolute;
-                content: '';
-                bottom: -5px;
-                left: 0;
-                height: 2px;
-                width: 0%;
-                background: $primary-color;
-                // opacity: 0;
-                transition: .5s;
-            }
-
+    
+    
         }
-
-        li:hover a:after {
-            opacity: 1;
-            width: 100%;
-        }
-
-
+    
     }
 
+    
     .header-social-icon {
         a {
             
@@ -198,7 +202,9 @@ $header-p :#21272F;
         }
 
         button {
-            padding: 0 10px;
+            // padding: 0 10px;
+           padding:15px 20px ;
+            line-height: 15px;
             font-size: 16px;
             color: #fff;
             text-transform: uppercase;
@@ -206,13 +212,7 @@ $header-p :#21272F;
 
         }
 
-        .header-btn {
-            margin-left: 20px;
-            display: inline-block;
-            padding: 16px 38px 14px 38px;
-            line-height: 16px;
-            font-weight: 600;
-        }
+    
     }
 
 }
@@ -249,7 +249,7 @@ $header-p :#21272F;
     background-image: url(/src/images/banner-section.png);
     padding-top: 40px;
     min-height: 100vh;
-    margin-top: -75px;
+   
     background-size: cover !important;
     background-position: center !important;
    
@@ -1437,6 +1437,11 @@ input::-webkit-input-placeholder {
     .navbar-toggler {
         display: none;
     }
+    .nav-all,
+    .header-social-icon{
+        display: none;
+    }
+    
    
 }
 @media(min-width:576px) and (max-width:767px) {
@@ -1606,6 +1611,11 @@ input::-webkit-input-placeholder {
     .navbar-toggler {
         display: none;
     }
+    .nav-all,
+    .header-social-icon{
+        display: none;
+    }
+    
     
 }
 
@@ -1696,12 +1706,12 @@ input::-webkit-input-placeholder {
     .mobile-bars-position{
         display: block;
     }
-    div#navbarSupportedContent {
-        display: none!important;
-    }
-    .navbar-toggler {
+    .nav-all,
+    .header-social-icon{
         display: none;
     }
+    
+    
     
 
 }
@@ -1731,7 +1741,25 @@ input::-webkit-input-placeholder {
     .contact-right {
         padding: 50px 38px;
     }
+    .mobile-menu {
+        
+        display: none!important;
+    }
+    .header {
+        padding: 0 8px; 
+    }
+    .header .nav-all ul {
+        padding-left: 140px;
+        display: flex;
+        margin-left: -107px;
+    }
 }
+
+
+
+
+
+
 .mobile-menu-wrapper {
     position: fixed;
     top:0px;
