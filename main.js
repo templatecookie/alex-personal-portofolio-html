@@ -2,18 +2,47 @@
 import './src/scss/main.scss'
 import 'bootstrap/scss/bootstrap.scss'
 
+  // var swiper = new Swiper(".mySwiper", {
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //     type: "progressbar",
+  //   },
+  //   navigation: {
+  //     nextEl: ".swiper-button-next",
+  //     prevEl: ".swiper-button-prev",
+  //   },
+  // });
 
-  var swiper = new Swiper(".mySwiper", {
-    pagination: {
-      el: ".swiper-pagination",
-      type: "progressbar",
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    
-  });
+  // var swiper = new Swiper(".testimonialSlider", {
+  //   direction: 'vertical',
+  //   mousewheelControl: true,
+  //   slidesPerView: 2,
+  //   mousewheel: true,
+  //   freeMode: true,
+  //   // freeModeSticky: true,
+  //   scrollbar: {
+  //     el: ".swiper-scrollbar",
+  //     hide: false,
+  //   },
+  //   navigation: {
+  //     nextEl: ".swiper-button-next",
+  //     prevEl: ".swiper-button-prev",
+  //   },
+  // });
+
+
+      var swiper = new Swiper(".testimonialSlider", {
+        direction: 'vertical',
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: true,
+        },
+        navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+      });
+   
 
 
 
