@@ -46,6 +46,21 @@ import 'bootstrap/scss/bootstrap.scss'
       var swiper = new Swiper(".portfolio-slider-tab", {
         slidesPerView: 4,
       });
+
+      var swiper = new Swiper(".partner-slider", {
+        slidesPerView: 4,
+        breakpoints: {
+          767: {
+              slidesPerView: 3,
+              spaceBetweenSlides: 30
+          },
+        
+          575: {
+              slidesPerView: 2,
+              spaceBetweenSlides: 40
+          }
+      }
+      });
    
 
 
