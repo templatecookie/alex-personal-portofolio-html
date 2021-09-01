@@ -42,6 +42,10 @@ import 'bootstrap/scss/bootstrap.scss'
               prevEl: ".swiper-button-prev",
             },
       });
+
+      var swiper = new Swiper(".portfolio-slider-tab", {
+        slidesPerView: 4,
+      });
    
 
 
@@ -112,8 +116,50 @@ function darkFunction() {
 
 
 
+ // external js: isotope.pkgd.js
+
+
+// init Isotope
+// var $grid = $('.all-portfolio-item').isotope({
+//   itemSelector: '.element-item',
+//   layoutMode: 'fitRows',
+//   getSortData: {
+//     name: '.name',
+//     symbol: '.symbol',
+//     number: '.number parseInt',
+//     category: '[data-category]',
+//     weight: function( itemElem ) {
+//       var weight = $( itemElem ).find('.weight').text();
+//       return parseFloat( weight.replace( /[\(\)]/g, '') );
+//     }
+//   }
+// });
 
 
 
+// $('.all-portfolio-item').isotope({
+//   // options
+//   itemSelector: '.grid-item',
+//   layoutMode: 'fitRows'
+// });
 
 
+// init Isotope
+var $grid = $('.all-items-portfolio').isotope({
+  // options
+});
+// filter items on button click
+$('.portfolio-menu').on( 'click', 'li', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+});
+
+
+$('.scroll-shift').click(function(e){
+  e.preventDefault();
+  var target = $($(this).attr('href'));
+  if(target.length){
+    var scrollTo = target.offset().top;
+    $('body, html').animate({scrollTop: scrollTo+'px'}, 400);
+  }
+});
