@@ -1794,9 +1794,6 @@ input::-webkit-input-placeholder {
 }
 
 
-
-
-
 .mobile-menu-wrapper {
     position: fixed;
     top:0px;
@@ -1804,54 +1801,67 @@ input::-webkit-input-placeholder {
     height: 100vh;
     width: 100%;
     z-index: 99999;
-    display: none;
-}
+    visibility: hidden;
+    transition: visibility 0.4s ease-in-out;
 
-.background-opacity{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(black, 0.5);
-    z-index: -1;
-}
-
-
-.mobile-menu{
-    background-color: #fff;
-    
-    width:350px;
-    height: 100%;
-    z-index: 99;
-    position: relative;
-    ul{
-        padding-top: 20px;
-        padding-bottom: 10px;
-        padding-left: 30px;
-        li{
-            list-style-type: none;
-            a{
-                text-decoration: none;
-                color: #171C23;
-                padding: 5px 0;
-                transition: .5s;
-            }
-            a:hover{
-                color: $primary-color;
-            }
-        }
-    }
-    img{
-        padding-top: 20px;
-    }
-    .mobile-menu-bar{
+    .background-opacity{
         position: absolute;
-        top:30px;
-        right: 30px;  
-        svg{
-             height: 20px;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        // background-color: rgba(black, 0.5);
+        background-color: rgba(black, 0);
+        z-index: -1;
+        transition: all .4s ease-out;
+    }
+
+    .mobile-menu{
+        background-color: #fff;
+        width:350px;
+        height: 100%;
+        z-index: 99;
+        position: relative;
+        transform: translateX(-600px);
+        transition: transform .3s linear;
+        transition-delay: 0.3s;
+        ul{
+            padding-top: 20px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+            li{
+                list-style-type: none;
+                a{
+                    text-decoration: none;
+                    color: #171C23;
+                    padding: 5px 0;
+                    transition: .5s;
+                }
+                a:hover{
+                    color: $primary-color;
+                }
+            }
         }
+        img{
+            padding-top: 20px;
+        }
+        .mobile-menu-bar{
+            position: absolute;
+            top:30px;
+            right: 30px;  
+            svg{
+                height: 20px;
+            }
+        }
+    }
+    &.active {
+        .background-opacity {
+            background-color: rgba(black, 0.5);
+        }
+        .mobile-menu{
+            transform: translateX(0);
+            visibility: visible;
+        } 
     }
 }
 

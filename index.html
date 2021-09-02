@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+fg<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -107,7 +107,7 @@
         </div>
       </div>
 
-      <aside class="mobile-menu-wrapper" id="mobile-menu-wrapper" style="display: none;">
+      <aside class="mobile-menu-wrapper" id="mobile-menu-wrapper" style="visibility: hidden;">
         <div class="background-opacity"></div>
         <div class="mobile-menu" id="mobileMenu">
           <div class="mobile-menu-header">
@@ -833,17 +833,17 @@
     var mobileMenuWrapper = document.getElementById("mobile-menu-wrapper");
 
     function hideMenu() {
-      mobileMenuWrapper.style.display = "none";
+      mobileMenuWrapper.style.visibility = "hidden";
       mobileMenuWrapper.classList.remove('active');
     }
 
     function showMenu() {
-      mobileMenuWrapper.style.display = "block";
+      mobileMenuWrapper.style.visibility = "visible";
       mobileMenuWrapper.classList.add('active');
     }
 
     function menutogglemoobile() {
-      if (mobileMenuWrapper.style.display === "none") {
+      if (mobileMenuWrapper.style.visibility === "hidden") {
         showMenu();
       } else {
         hideMenu();
