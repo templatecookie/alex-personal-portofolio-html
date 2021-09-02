@@ -51,7 +51,7 @@ import 'bootstrap/scss/bootstrap.scss'
         slidesPerView: 4,
         breakpoints: {
           767: {
-              slidesPerView: 3,
+              slidesPerView: 4,
               spaceBetweenSlides: 30
           },
         
@@ -112,6 +112,9 @@ import 'bootstrap/scss/bootstrap.scss'
     },
   });
 
+
+  
+
   function getDirection() {
     var windowWidth = window.innerWidth;
     var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
@@ -119,14 +122,19 @@ import 'bootstrap/scss/bootstrap.scss'
     return direction;
   }
 
+  
 
+  // function darkFunc() {
+  //   var apply = document.getElementsByClassName("dark");
+  //   apply.classList.add("dark-theme");
+  //   alert("hy");
+  // }
 
-function darkFunction() {
- 
-    var apply = document.getElementById("dark");
-    // apply.classList.add("dark-theme");
-    alert("hy");
- }
+// const themeSwitch = document.querySelector('input');
+
+// themeSwitch.addEventListener('change', () => {
+//   document.body.classList.toggle('dark-theme');
+// });
 
 
 

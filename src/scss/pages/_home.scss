@@ -117,8 +117,9 @@ $header-p :#21272F;
     background:#20ac67!important;
 }
 
-.banner--content--left .btnn:hover{
+.banner--content--left a:hover{
     background:#20ac67;
+    color:#fff;
 }
 .contact-btn{
     transition: .5s;
@@ -127,6 +128,8 @@ $header-p :#21272F;
     background:#20ac67!important;
     color:#fff!important;
 }
+
+
 
 /* menu start start -----------------------*/
 
@@ -286,6 +289,9 @@ $header-p :#21272F;
                 font-weight: 600;
                 text-transform: uppercase;
             }
+                a{
+                    text-decoration: cadetblue;
+                }
         }
 
         .srolll-drwn {
@@ -409,6 +415,9 @@ $header-p :#21272F;
             text-transform: lowercase;
             font-family: 'Inter';
             letter-spacing: 0px;
+        }
+        a{
+            text-decoration: none;
         }
 
     }

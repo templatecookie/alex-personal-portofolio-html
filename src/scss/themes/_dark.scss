@@ -6,10 +6,7 @@
                 a {
                     color: #88949B!important;
                 }
-                .active{
-                    color: #fff!important;
-                }
-    
+
                 .active:after {
                     background: $primary-color;  
                 }
@@ -270,6 +267,20 @@
                 background-color: #21272F;
             }
         }
-        
+
+        .header .nav-all ul li .active {
+            position: relative;
+            color: #fff;
+        }
+        .portfolio-arrows-left, .portfolio-arrows-right {
+            background-color: #171C23;
+           
+        }
+        .testimonial-arrows svg {
+           
+            path{
+                stroke: #20ac67;
+            }
+        }
 }
 

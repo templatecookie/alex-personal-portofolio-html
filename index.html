@@ -148,11 +148,11 @@
 
 
           <ul>
-            <li> <a href="#">Home</a></li>
-            <li> <a href="#">About</a></li>
-            <li> <a href="#">Project</a></li>
-            <li> <a href="#">Blog</a></li>
-            <li> <a href="#">Contact</a></li>
+            <li> <a href="#home">Home</a></li>
+            <li> <a href="#about">About</a></li>
+            <li> <a href="#project">Project</a></li>
+            <li> <a href="#blog">Blog</a></li>
+            <li> <a href="#contact">Contact</a></li>
           </ul>
           <div class="header-mbl-social-icon">
             <a href="#">
@@ -198,7 +198,8 @@
                 <p>Hi I'm Alex Wallace, a passionate UI/UX Designer based in the Philippines. Welcome to portfolio
                   world.
                 </p>
-                <button class="btnn btnn-primary">View Portfolio</button>
+                <a href="#project" class="btnn btnn-primary">View Portfolio</a>
+               
               </div>
               <div class="srolll-drwn">
                 <a href="#about" class="wow bounceInUp">Scroll Down<br>to Explore</a>
@@ -229,7 +230,7 @@
           <div class="row">
             <div class="col-lg-6">
               <div class="about--img">
-                <img src="src/images/about person.png" alt="">
+                <img src="src/images/about-person.png" alt="Man Image">
                 <div class="info-item info-item-one">
                   <span>250+</span>
                   <p>Complete Project</p>
@@ -262,11 +263,9 @@
                   to contact me.
                   <span class="gmail">alex.wallace@gmail.com</span>
                 </p>
-                <button class="btnn-primary btnn ">Hire Me</button>
-
-                <a href="src/images/cv.pdf" download>
-                  <button class="btnn-border-dark btnn Download">Download Cv</button>
-                </a>
+                
+                <a href="#" class="btnn-primary btnn">Hire Me</a>
+                <a href="src/images/cv.pdf" download class="btnn-border-dark btnn Download">Download Cv</a>
               </div>
             </div>
           </div>
@@ -795,10 +794,11 @@
           </div>
           <div class="col-lg-4 align-self-center">
             <div class="secondary-footer-right">
-
+             
+              <button onclick="darkFunc()">Dark</button>
               <select name="mode" id="mode">
                 <option value="light">Light</option>
-                <option value="dark"><button onclick="darkFunction()">Dark</button></option>
+                <option value="dark" onclick="themechange()">Dark</option>
               </select>
 
             </div>
@@ -827,6 +827,15 @@
         console.log('click inside');
       }
     });
+
+    function themechange(){
+      alert("Hello");
+    }
+    function darkFunc() {
+    // var apply = document.getElementsByClassName("dark");
+    // apply.classList.add("dark-theme");
+    alert("hy");
+  }
   </script>
 
   <script>
