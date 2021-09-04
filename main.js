@@ -222,3 +222,11 @@ function changeTheme(value){
     document.getElementById('theme').classList.remove('dark-theme')
   }
 }
+
+
+window.addEventListener('load', (event) => {
+  let theme = localStorage.getItem('theme');
+  let element = document.getElementById("themeMode");
+  
+  element.value = theme;
+});
