@@ -282,5 +282,33 @@
                 stroke: #20ac67;
             }
         }
+        .mobile-bars-position .line-mbl-responsive::before {
+            background-color: #fff; 
+        }
+        .mobile-bars-position .line-mbl-responsive::after {
+            background-color: #fff; 
+        }
+        .mobile-menu-wrapper .mobile-menu {
+            background-color: #21272F;
+            ul {
+                li a{
+                    color:#fff;
+                }
+            }
+           
+        }
+        .mobile-menu-bar{
+            svg{
+                fill:#fff;
+                path{
+                    stroke: #fff;
+                }
+            }
+        }
+        .secondary-footer-right{
+            select{
+                color: #000;
+            }
+        }
 }
 

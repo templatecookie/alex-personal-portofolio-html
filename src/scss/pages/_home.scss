@@ -479,6 +479,9 @@ $header-p :#21272F;
 .about--right .btnn{
     font-family: 'Epilogue';
 }
+.item-portfolio{
+    margin-bottom: 40px;
+}
 
 /* services start-------------- */
 
@@ -1263,7 +1266,9 @@ input::-webkit-input-placeholder {
         height: 100px;
         width: 120px;   
     }
-
+    .about--right h3 {
+        font-size: 35px;
+    }
     .info-item span {
         font-size: 20px; 
         line-height: 10px;
@@ -1373,10 +1378,7 @@ input::-webkit-input-placeholder {
     .card {
         margin: 20px 0;
     }
-    .footer-curve {
-        margin-bottom: -5px;
-        
-    }
+    
     .contact {
         padding-top: 20px;
     }
@@ -1449,10 +1451,76 @@ input::-webkit-input-placeholder {
         text-align: center;
         padding: 15px 0 0 0 !important;
     }
-    .item-portfolio {
-        margin-bottom: 0px;
+    
+    .tab-list{
+        gap:0px;
     }
-   
+    .swiper-scrollbar{
+        display: none;
+    }
+    
+    .header {
+        padding: 0 0 0 20px;
+        padding-top: 0px;
+    }
+    .mobile-bars-position {
+        position: absolute;
+        top: 43px;
+        right: 20px;
+    }
+    .testimonial-arrows {
+        margin-top: 20px;
+    }
+    .footer-curve {
+        margin-top: 40px;
+    }
+    .about--right span {
+        font-size: 13px;
+    }
+    .banner--content--left .btnn {
+        padding: 15px 25px 13px 25px;
+        font-size: 12px;
+    }
+    .about--right .btnn {
+        padding: 10px 21px 7px 22px;
+        font-size: 14px;
+        margin-bottom: 8px;
+        font-weight: 500!important;
+    }
+    .services--body {
+        padding-top: 20px;
+    }
+    .portfolio-content {
+        
+        padding-bottom: 30px;
+        
+    }
+    .blog-header {
+        padding-bottom: 15px;
+    }
+    .contact-right-item i {
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+        margin-right: 7px;
+    }
+    .contact-right {
+        padding: 40px 20px;
+        border-radius: 15px;
+    }
+    .testimonial {
+        margin-top: 20px;
+    }
+    .testimonial-slider-content {
+        height: 240px!important;
+    }
+
+    .item-portfolio {
+        margin-bottom: 15px;
+    }
+    .item-portfolio .card {
+        margin-top: 0;
+    }
 }
 @media(min-width:576px) and (max-width:767px) {
     .banner--content--right img {
@@ -1604,10 +1672,7 @@ input::-webkit-input-placeholder {
     .partner-border {
         border: 0;
     }
-    .partner-all-item {
-        padding: 0px 0;
-        
-    }
+    
     .partner-all-item {
         position: unset;
         width: 100%;
@@ -1641,9 +1706,18 @@ input::-webkit-input-placeholder {
         text-align: center;
         padding: 20px 0 0 0 !important;
     }
-    .item-portfolio {
-        margin-bottom: 20px;
+    .about--right .btnn {
+        padding: 15px 30px 13px 32px;
+        font-size: 14px;
+        margin-right: 8px;
     }
+    .testimonial {
+        padding-bottom: 110px;
+    }
+    .testimonial-slider-content {
+        height: 220px!important;
+    }
+    
     
 }
 
@@ -1910,9 +1984,7 @@ input::-webkit-input-placeholder {
         width: 100%;
     }
 }
-.item-portfolio{
-    margin-bottom: 40px;
-}
+
 .portfolio .row{
     margin-left: 0!important;
 }
@@ -1928,4 +2000,10 @@ input::-webkit-input-placeholder {
     width: 1px!important;
 }
     
-
+.secondary-footer-right{
+    select{
+        background-color: transparent;
+        border:0;
+        color: #fff;
+    }
+}

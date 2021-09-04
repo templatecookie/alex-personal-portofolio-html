@@ -50,15 +50,27 @@ import 'bootstrap/scss/bootstrap.scss'
       var swiper = new Swiper(".partner-slider", {
         slidesPerView: 4,
         breakpoints: {
-          767: {
-              slidesPerView: 4,
+          1400: {
+              slidesPerView: 5 ,
               spaceBetweenSlides: 30
           },
+          1200: {
+            slidesPerView: 4 ,
+            spaceBetweenSlides: 30
+        },
+          767: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 30
+        },
         
           575: {
               slidesPerView: 2,
               spaceBetweenSlides: 40
-          }
+          },
+          320: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 40
+        }
       }
       });
    
@@ -186,3 +198,27 @@ $('.scroll-shift').click(function(e){
     $('body, html').animate({scrollTop: scrollTo+'px'}, 400);
   }
 });
+
+
+window.addEventListener('load', function(){
+  let theme = localStorage.getItem('theme');
+
+  changeTheme(theme);
+  var e = document.getElementById("themeMode").value(theme);
+});
+
+var e = document.getElementById("themeMode");
+e.addEventListener('change', function(){
+  var e = document.getElementById("themeMode");
+  
+  changeTheme(e.value);
+})
+
+function changeTheme(value){
+  localStorage.setItem('theme', value)
+  if(value == "dark"){
+    document.getElementById('theme').classList.add('dark-theme')
+  } else {
+    document.getElementById('theme').classList.remove('dark-theme')
+  }
+}
