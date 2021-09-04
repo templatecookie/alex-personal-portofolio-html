@@ -7,14 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <title>Alex Portfolio</title>
 </head>
 
 <body>
+     <!-- dark mode option-->
   <div class="dark" id="theme">
     <!-- header section Start-->
     <section>
@@ -774,20 +773,20 @@
   <script src="src/js/jquery.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="src/js/isotope.pkgd.min.js"></script>
+   <!-- Custom  js-->
   <script type="module" src="/main.js"></script>
+
+  <!-- responsive menu js-->
   <script>
     var mobileMenuWrapper = document.getElementById("mobile-menu-wrapper");
-
     function hideMenu() {
       mobileMenuWrapper.style.visibility = "hidden";
       mobileMenuWrapper.classList.remove('active');
     }
-
     function showMenu() {
       mobileMenuWrapper.style.visibility = "visible";
       mobileMenuWrapper.classList.add('active');
     }
-
     function menutogglemoobile() {
       if (mobileMenuWrapper.style.visibility === "hidden") {
         showMenu();
