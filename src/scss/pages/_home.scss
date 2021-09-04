@@ -428,6 +428,11 @@
         max-width: 200px;
     }
 }
+.header-test-content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
 
 .testimonial-background-element-left {
     position: absolute;
@@ -440,7 +445,6 @@
 }
 
 .testimonial-header {
-    padding-top: 20px;
     padding-bottom: 40px;
 }
 
@@ -480,16 +484,14 @@
 
 /* partner start */
 .partner {
-    margin-top: -55px;
-    position: relative;
-
+  position: relative;
+    margin-top: -65px;
     &-all-item {
         text-align: center;
         border: 1.5px solid rgba(42, 218, 132, 0.2);
         padding: 40px 0;
         background-color: #fff;
     }
-
     &-border {
         border-right: 1px solid #f1f1f1;
 
@@ -690,8 +692,13 @@
     }
 
     .footer-curve {
+        img {
+            pointer-events: none !important;
+        }
+
         svg {
             margin-top: -90px !important;
+            pointer-events: none;
         }
     }
 }
@@ -749,9 +756,7 @@ option {
     background: $primary-color;
 }
 
-.partner {
-    position: relative;
-}
+
 
 .swiper-button-next,
 .swiper-button-prev {
@@ -959,6 +964,13 @@ li {
     i:hover path {
         stroke: $primary-color;
     }
+
+}
+
+.testeee {
+    img {
+        pointer-events: none;
+    }
 }
 
 .card {
@@ -1164,9 +1176,6 @@ input::-webkit-input-placeholder {
     }
 }
 
-.testimonial-slider-content {
-    height: 280px;
-}
 
 .swiper-slide {
     height: 100% !important;
@@ -1208,18 +1217,6 @@ input::-webkit-input-placeholder {
     margin-left: 0 !important;
 }
 
-.swiper-scrollbar-drag {
-    background: #29D882;
-    width: 5px !important;
-}
-
-.swiper-scrollbar {
-    border-radius: 10px;
-    position: relative;
-    -ms-touch-action: none;
-    background: #29D882;
-    width: 1px !important;
-}
 
 .secondary-footer-right {
     select {
@@ -1227,4 +1224,13 @@ input::-webkit-input-placeholder {
         border: 0;
         color: #fff;
     }
+}
+
+.footer-curve {
+    img {
+        pointer-events: none !important;
+    }
+}
+.slider-item{
+    margin-left: 5px;
 }

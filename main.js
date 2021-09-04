@@ -32,11 +32,7 @@ import 'bootstrap/scss/bootstrap.scss'
 
 
       var swiper = new Swiper(".testimonialSlider", {
-        direction: 'vertical',
-        scrollbar: {
-          el: ".swiper-scrollbar",
-          hide: true,
-        },
+       
         navigation: {
               nextEl: ".swiper-button-next",
               prevEl: ".swiper-button-prev",
@@ -225,8 +221,7 @@ function changeTheme(value){
 
 
 window.addEventListener('load', (event) => {
-  let theme = localStorage.getItem('theme');
-  let element = document.getElementById("themeMode");
-  
-  element.value = theme;
+    let theme = localStorage.getItem('theme');
+    let element = document.getElementById("themeMode");
+    element.value = theme;
 });
