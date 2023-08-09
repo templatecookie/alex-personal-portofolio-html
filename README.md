@@ -10,8 +10,8 @@ Check the [Live Demo here](https://alex-portfolio-template.netlify.app/).
 ![](screenshot.png)
 
 ## Framework & Technologies
-- Bootstrap
-- Isotop
+- bootstrap
+- isotope-layout
 
 ## Credits
 - Design & Developed by [Templatecookie](https://templatecookie.com)
