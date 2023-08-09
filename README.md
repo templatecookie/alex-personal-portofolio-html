@@ -12,6 +12,7 @@ Check the [Live Demo here](https://alex-portfolio-template.netlify.app/).
 ## Framework & Technologies
 - bootstrap
 - isotope-layout
+- scss
 
 ## Credits
 - Design & Developed by [Templatecookie](https://templatecookie.com)
