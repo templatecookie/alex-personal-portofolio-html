@@ -10,9 +10,9 @@ Check the [Live Demo here](https://alex-portfolio-template.netlify.app/).
 ![](screenshot.png)
 
 ## Framework & Technologies
-- bootstrap
-- isotope-layout
-- scss
+- [bootstrap4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+- [isotope-layout](https://isotope.metafizzy.co/)
+- [scss](https://sass-lang.com/)
 
 ## Credits
 - Design & Developed by [Templatecookie](https://templatecookie.com)
